@@ -1,5 +1,10 @@
 # BuildMarket Store
 
+## Links
+
+- GitHub: https://github.com/Andrey15211/buildmarket-store
+- Live Demo: https://buildmarket-store.vercel.app
+
 Production-like e-commerce demo for a Russian construction materials supplier. The project is a standalone portfolio case focused on commercial frontend engineering, catalog behavior, client state, and validated checkout flows.
 
 ## Features
