@@ -1,88 +1,85 @@
 # BuildMarket Store
 
-## Links
+![Next.js](https://img.shields.io/badge/Next.js-App%20Router-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Zustand](https://img.shields.io/badge/state-Zustand-433e38)
+![Localization](https://img.shields.io/badge/localization-RU%20%2F%20EN-7c3aed)
 
-- GitHub: https://github.com/Andrey15211/buildmarket-store
-- Live Demo: https://buildmarket-store.vercel.app
+BuildMarket Store is a production-like e-commerce demo for a construction materials supplier. It focuses on commercial storefront structure, catalog exploration, persistent cart state, pricing rules, and a validated checkout flow.
 
-Production-like e-commerce demo for a Russian construction materials supplier. The project is a standalone portfolio case focused on commercial frontend engineering, catalog behavior, client state, and validated checkout flows.
+## Live Demo
+
+https://buildmarket-store.vercel.app
+
+## Source Code
+
+https://github.com/Andrey15211/buildmarket-store
 
 ## Features
 
-- Industrial B2B storefront with responsive home page
-- 24 realistic products in 6 construction categories
-- Catalog search, category and price filters, sorting, and empty state
+- Responsive B2B storefront and category navigation
+- 24 demo products across six construction categories
+- Search, category/price filters, sorting, and empty states
 - Static product detail routes with specifications and stock status
-- Persistent Zustand cart with quantity controls and product removal
+- Persistent cart with quantity controls and product removal
 - Delivery calculation and order totals
-- Checkout form built with React Hook Form and Zod
-- Complete RU/EN interface localization with a persistent language switcher
-- Accessible labels, loading states, keyboard focus styles, and mobile filters
+- Validated checkout form with conditional delivery rules
 
-## Stack
+## Tech Stack
 
 - Next.js App Router
-- next-intl
-- TypeScript
+- React and TypeScript
 - Tailwind CSS
+- next-intl
 - Zustand
-- React Hook Form
-- Zod
+- React Hook Form and Zod
 - Vitest
 
-## Local setup
+## Localization
+
+- RU/EN support: navigation, catalog, products, checkout, errors, and states
+- Default language: Russian (`/ru`)
+- Language switcher: available in the header
+- Locale-prefixed routes preserve the current page
+
+## Screenshots
+
+### Desktop
+
+![BuildMarket desktop view](docs/screenshots/desktop.png)
+
+### Mobile
+
+Planned path: `docs/screenshots/mobile.png`
+
+### RU/EN example
+
+![BuildMarket English localization](docs/screenshots/localization.png)
+
+Mobile screenshot will be added after final device-width capture.
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000). The root URL redirects to Russian:
-
-- `http://localhost:3000/ru`
-- `http://localhost:3000/en`
-
-Quality checks:
-
-```bash
-npm test
-npm run lint
-npm run typecheck
 npm run build
 ```
 
-## Project structure
+The root URL redirects to `http://localhost:3000/ru`.
 
-```text
-src/
-  app/[locale]/ localized App Router pages and global layout
-  components/   storefront, catalog, cart, checkout, and layout UI
-  data/         mock product catalog
-  lib/          filtering, validation, category, and pricing logic
-  i18n/         next-intl routing, navigation, request config, and RU/EN dictionaries
-  store/        persistent Zustand cart
-  types/        shared product and cart contracts
-```
+## Deployment
 
-## Demonstrated skills
+Deployed on Vercel using the default Next.js preset. No runtime environment variables are required for the portfolio demo.
 
-- App Router composition and static dynamic routes
-- Typed domain modeling and reusable component boundaries
-- Client-side filtering and derived catalog state
-- Persistent cart state and pricing calculations
-- Form validation with conditional delivery rules
-- Dictionary-based localization of navigation, catalog, products, forms, errors, and states
-- Responsive, accessible commercial UI implementation
-- Unit testing for catalog, pricing, and validation behavior
+## What this project demonstrates
 
-## Vercel deployment
+- Commercial frontend and e-commerce UI
+- Catalog filtering and derived client state
+- Cart and checkout business logic
+- Form validation
+- Responsive localized storefront engineering
 
-The project has no required runtime environment variables. Import the repository into Vercel and use the default Next.js preset. Vercel will run `npm run build`; the static product pages are generated during the build.
+## Recommended GitHub Topics
 
-`.env.example` is included as a deployment template for future external integrations.
-
-## Localization
-
-Russian is the default language. `next-intl` provides locale-prefixed routes (`/ru` and `/en`), middleware redirects, locale-aware navigation, static rendering for both languages, and correct `html lang` values. Use the `RU / EN` switcher in the header to preserve the current page while changing locale.
-
-All interface copy, validation errors, product content, filters, loading states, empty states, and statuses are sourced from typed RU/EN dictionaries.
+`ecommerce` `online-store` `nextjs` `typescript` `zustand` `react-hook-form` `zod` `next-intl` `tailwindcss` `vercel`
