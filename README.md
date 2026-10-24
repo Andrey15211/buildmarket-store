@@ -7,9 +7,11 @@
 
 BuildMarket Store is a production-like e-commerce demo for a construction materials supplier. It focuses on commercial storefront structure, catalog exploration, persistent cart state, pricing rules, and a validated checkout flow.
 
-## Live Demo
+## 🚀 Live Demo
 
-https://buildmarket-store.vercel.app
+**https://buildmarket-store.vercel.app**
+
+Production-ready deployment with full catalog, cart persistence, and bilingual RU/EN support.
 
 ## Source Code
 
