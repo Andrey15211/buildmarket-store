@@ -83,3 +83,11 @@ Deployed on Vercel using the default Next.js preset. No runtime environment vari
 ## Recommended GitHub Topics
 
 `ecommerce` `online-store` `nextjs` `typescript` `zustand` `react-hook-form` `zod` `next-intl` `tailwindcss` `vercel`
+
+---
+
+## Contact
+
+**Telegram:** [@andrey15211](https://t.me/andrey15211)  
+**Email:** andrejbadalin8@gmail.com  
+**GitHub:** [Andrey15211](https://github.com/Andrey15211)
